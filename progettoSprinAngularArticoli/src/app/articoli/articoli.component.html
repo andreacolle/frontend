@@ -1,0 +1,16 @@
+    <thead>
+      <tr>
+        <th>nomearticolo</th>
+        <th>listaRecensioniPerArticolo</th>
+      </tr>
+    </thead>
+
+    <tbody>
+        <!-- non convinto del prossimo passaggio-->
+        <tr *ngFor="let articolo of listaArticoli">
+            <td>{{articoli.nomearticolo}}</td>
+            <td *ngfor="let recensione of articolo.recensioni">
+              {{recensione.nomerecensione}}</td>
+        </tr>
+      </tbody>
+    </table>
